@@ -11,13 +11,19 @@ body {
   background-position: right;
   text-align: center;
 }
+.bg-overlay {
+  background: rgba(255,255,255,0.2);
+  position: fixed;
+  right: 0;
+  left: 0;
+  height: 100vh;
+}
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: rgba(255,255,255, 0.1);
   transition: 200ms ease-in-out;
   margin: 0 auto;
 }
@@ -81,5 +87,12 @@ body {
     font-size: 16px;
     transition: 200ms ease-in-out;
     font-weight: 300;
+  }
+  .bg-overlay {
+    background: rgba(255,255,255,0);
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 100vh;
   }
 }
